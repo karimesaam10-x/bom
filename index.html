@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.26.25/dist/sweetalert2.min.css
+"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>bom</title>
+  </head>
+  <body>
+    <nav class="navbar md:navbar-expand bg-danger">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="btn-icon navbar-toggler"
+          type="button"
+          data-bs-toggle="drawer"
+          data-bs-target="#navbarDrawer"
+          aria-controls="navbarDrawer"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <dialog
+          class="drawer drawer-end"
+          tabindex="-1"
+          id="navbarDrawer"
+          aria-labelledby="navbarDrawerLabel"
+        >
+          <div class="drawer-header">
+            <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="drawer"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="drawer-body mb-2 md:mb-0">
+            <ul class="nav navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <button
+                  class="nav-link"
+                  type="button"
+                  data-bs-toggle="menu"
+                  aria-expanded="false"
+                >
+                  Menu
+                </button>
+                <div class="menu">
+                  <a class="menu-item" href="#">Action</a>
+                  <a class="menu-item" href="#">Another action</a>
+                  <hr class="menu-divider" />
+                  <a class="menu-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="hstack gap-2" role="search">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn-solid btn-icon theme-secondary" type="submit">
+                <svg class="bi" width="16" height="16">
+                  <use href="#search" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </dialog>
+      </div>
+    </nav>
+
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate vero
+      iste porro totam laudantium necessitatibus molestiae omnis laborum quia
+      sit enim esse impedit dolor officiis quaerat debitis similique assumenda
+      eum repellendus fugiat, numquam aspernatur accusantium animi
+      reprehenderit? Fugit natus alias voluptatum eos rem molestias molestiae
+      recusandae aut placeat officiis sed sint blanditiis deleniti repellendus
+      id saepe dolorem repudiandae ipsam nostrum quasi, qui quidem! Deleniti
+      doloremque impedit numquam, sint laudantium dicta quibusdam error minus
+      doloribus modi cupiditate perferendis obcaecati eum non. Architecto
+      officiis rem vel aliquid natus ex dolor rerum iusto ea, impedit nesciunt
+      corrupti quod, cupiditate laudantium labore, dolores cumque.
+    </p>
+    <hr>
+    <!-- setInterval -->
+     <h1 class="fg-danger">setInterval</h1>
+    <h3 id="demo">Lorem ipsum dolor sit amet.</h3>
+    <button onclick="mouse = setInterval(myTimer, 2000)">Continue</button>
+    <button onclick="clearInterval(mouse)">Stop</button>
+<hr>
+    <!-- setTimeOut -->
+     <h1 class="fg-danger">setTimeout</h1>
+    <button onclick="mouse = setTimeout(setData, 3000)">Click</button>
+    <button onclick="getData() , clearTimeout(mouse)">Stop</button>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.26.25/dist/sweetalert2.all.min.js
+"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
